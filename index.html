@@ -1,13 +1,434 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebWorkVision - Corporate Website</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <div class="logo">WebWorkVision</div>
+                    
+                    <!-- Desktop Menu -->
+                    <div class="nav-menu">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars" id="menuIcon"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#services" class="mobile-nav-link">Services</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                    <a href="#faq" class="mobile-nav-link">FAQ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Welcome to
+                    <span class="hero-title-accent">WebWorkVision</span>
+                </h1>
+                <p class="hero-description">
+                    Your comprehensive technology partner. We offer advanced artificial intelligence solutions, 
+                    specialized content about the latest trends, and innovative online tools 
+                    to drive solutions for the entire internet.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">
+                    Discover our ecosystem of technological solutions designed to transform your online experience
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- WebWorkVision AI -->
+                <div class="service-card ai-card">
+                    <div class="service-icon ai-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">WebWorkVision AI</h3>
+                    <p class="service-description">
+                        Revolutionize your workflow with our cutting-edge artificial intelligence solutions. 
+                        We offer complete content generation services, from professional images to 
+                        persuasive and creative texts.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-dot ai-dot"></div>
+                            <span>AI image generation using DALL-E and Midjourney models</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-dot ai-dot"></div>
+                            <span>Creation of texts optimized for marketing and SEO</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-dot ai-dot"></div>
+                            <span>Intelligent chatbots and personalized virtual assistants</span>
+                        </div>
+                    </div>
+                    <button class="service-btn ai-btn">Explore AI</button>
+                </div>
+
+                <!-- WebWorkVision Blog -->
+                <div class="service-card blog-card">
+                    <div class="service-icon blog-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="service-title">WebWorkVision Blog</h3>
+                    <p class="service-description">
+                        Your reliable source of updated information about the most relevant trends in the digital world. 
+                        Stay up to date with expert content and deep analysis in multiple high-demand sectors.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-dot blog-dot"></div>
+                            <span>Technology trends: AI, blockchain, web development</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-dot blog-dot"></div>
+                            <span>Digital education: e-learning, edtech, innovative methodologies</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-dot blog-dot"></div>
+                            <span>Fitness and wellness: nutrition, workouts, wellness tech</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-dot blog-dot"></div>
+                            <span>Law and legality trends: legal tech, compliance, regulations</span>
+                        </div>
+                    </div>
+                    <button class="service-btn blog-btn">Read Blog</button>
+                </div>
+
+                <!-- WebWorkVision Tools -->
+                <div class="service-card tools-card">
+                    <div class="service-icon tools-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="service-title">WebWorkVision Tools</h3>
+                    <p class="service-description">
+                        Boost your productivity with our suite of specialized online tools. 
+                        From advanced calculators to automatic generators, we have the perfect solution 
+                        to optimize your work processes.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <div class="feature-dot tools-dot"></div>
+                            <span>Content generators: QR codes, automatic generators</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-dot tools-dot"></div>
+                            <span>Specialized calculators for finance and conversions</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-dot tools-dot"></div>
+                            <span>Online timers and productivity tools</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-dot tools-dot"></div>
+                            <span>Link shorteners and URL management tools</span>
+                        </div>
+                    </div>
+                    <button class="service-btn tools-btn">View Tools</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About WebWorkVision</h2>
+                <div class="about-card">
+                    <p class="about-text">
+                        WebWorkVision was born from the vision of providing comprehensive services of all kinds to the online world. 
+                        We are dedicated to offering solutions that facilitate online accessibility and improve the digital experience 
+                        for users around the world. Our focus is on creating tools, content, and AI services that make the internet 
+                        more accessible and functional for everyone.
+                    </p>
+                    <p class="about-text">
+                        We seek online feasibility in everything we do, ensuring that our services are accessible, efficient, and 
+                        useful for the global digital community. From artificial intelligence to specialized tools and trending content, 
+                        we work to make the internet a better place for everyone.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Satisfied Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Technical Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">
+                    Ready to transform your online experience? We're here to help you take the next step
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3 class="form-title">Send us a message</h3>
+                    <form action="https://formsubmit.co/webworkvision@gmail.com" method="POST" class="contact-form">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://webworkvision.com/thanks">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Name *</label>
+                                <input type="text" name="name" required class="form-input" placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email *</label>
+                                <input type="email" name="email" required class="form-input" placeholder="your@email.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Service of Interest</label>
+                            <select name="service" class="form-select">
+                                <option value="">Select a service</option>
+                                <option value="WebWorkVision AI">WebWorkVision AI</option>
+                                <option value="WebWorkVision Blog">WebWorkVision Blog</option>
+                                <option value="WebWorkVision Tools">WebWorkVision Tools</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Message *</label>
+                            <textarea name="message" required rows="5" class="form-textarea" placeholder="Tell us about your project or needs..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>webworkvision@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>Temporarily disabled</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">
+                    Find answers to the most common questions about our services
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What services does WebWorkVision offer?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer three main services: WebWorkVision AI for artificial intelligence solutions, WebWorkVision Blog for trending content, and WebWorkVision Tools for specialized online tools.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How can I access WebWorkVision AI?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can access our AI services by contacting us through the form on this page or sending an email to webworkvision@gmail.com. We offer personalized plans according to your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is the blog content free?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, our blog offers free content about the latest trends in technology, education, fitness, law and legality. We also have premium subscriptions for exclusive content and deeper analysis.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I request custom tools?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Our WebWorkVision Tools team can develop custom online tools according to your specific requirements. Contact us to discuss your project.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer technical support?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide complete technical support for all our services. You can contact us by email or through our support ticket system.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the delivery times?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Delivery times vary by project. For simple AI services: 24-48 hours. Custom tools: 1-4 weeks. We will provide you with a detailed timeline in the initial consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title">WebWorkVision</h3>
+                    <div class="footer-text">
+                        <p>© 2025 WebWorkVision</p>
+                        <p>All rights reserved</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">WebWorkVision AI</a></li>
+                        <li><a href="#">WebWorkVision Blog</a></li>
+                        <li><a href="#">WebWorkVision Tools</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-bottom-text">
+                        WebWorkVision - Technological innovation for your digital growth
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="mailto:webworkvision@gmail.com">Email</a>
+                        <a href="#">Phone</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
